@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ status.xml
+© Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+
+<Module>
+<ModulePrefs title="Graphs" height="750" scrolling="true">
+<Optional feature="com.ibm.rdm.rm.api"></Optional>	
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	
+	<p>
+		This extension uses the <a href="http://d3js.org/">D3</a> JavaScript library to draw some graphs based on the attribute values present in the
+		active module or collection.
+		In this example the value of the "Status" attribute is read for each artifact that has a value and graphed below.
+	</p>
+	<p>
+		Open a module or collection when this extension is in the mini dashboard, or click the button to pick a module or collection.
+	</p>
+	<button id="pickModuleOrCollection">Pick</button>
+	<h4 class="title"></h4>
+	<div class="simpleBarChart"></div>
+	<div class="labels"></div>
+	<h4 class="pieTitle"></h4>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js" charset="utf-8"></script>
+	<script src="js/status.js"></script>
+
+]]>
+</Content>
+</Module>

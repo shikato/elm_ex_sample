@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ attr-links-ext.xml
+© Copyright IBM Corporation 2013
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Attributes" height="700" scrolling="true">
+	<Require feature="com.ibm.rdm.rm.api"/>
+</ModulePrefs>
+<Content type="html">
+	<![CDATA[
+		<html>
+			<head>
+				<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+				<script src="js/attr-links-ext.js"></script>
+				<link rel="stylesheet" type="text/css" href="css/attr-links-ext.css">
+			</head>
+			<body>
+				<h3>Attributes</h3>
+				<div id="attributes" class="info"></div>
+				<br/>
+				<h3>Links</h3>
+				<div id="links" class="info"></div>
+			</body>
+		</html>
+	]]>
+</Content>
+</Module>

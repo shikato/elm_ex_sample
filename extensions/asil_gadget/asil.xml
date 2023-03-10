@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ asil.xml
+© Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+	<ModulePrefs title="ASIL Guidance" height="680">
+		<Require feature="com.ibm.rdm.rm.api"/>
+		<Require feature="dynamic-height"/>
+	</ModulePrefs>
+	<Content type="html">
+	<![CDATA[
+		<link rel="stylesheet" type="text/css" href="css/asil-helper.css">
+					
+		<h3>ASIL Value Checker</h3>
+		<h4>Table of correct ASIL values</h4>
+		<table class="asilTable">
+			<tr class="header">
+				<td colspan="2" class="no-show"></td>
+				<td>C1</td>
+				<td>C2</td>
+				<td>C3</td>
+			</tr>
+			<tr>
+				<td rowspan="4" class="severity">S1</td>
+				<td class="exposure">E1</td>
+				<td class="S1 E1 C1 QM">QM</td>
+				<td class="S1 E1 C2 QM">QM</td>
+				<td class="S1 E1 C3 QM">QM</td>
+			</tr>
+			<tr>
+				<td class="exposure">E2</td>
+				<td class="S1 E2 C1 QM">QM</td>
+				<td class="S1 E2 C2 QM">QM</td>
+				<td class="S1 E2 C3 QM">QM</td>
+			</tr>
+			<tr>
+				<td class="exposure">E3</td>
+				<td class="S1 E3 C1 QM">QM</td>
+				<td class="S1 E3 C2 QM">QM</td>
+				<td class="S1 E3 C3 A">A</td>
+			</tr>
+			<tr>
+				<td class="exposure">E4</td>
+				<td class="S1 E4 C1 QM">QM</td>
+				<td class="S1 E4 C2 A">A</td>
+				<td class="S1 E4 C3 B">B</td>
+			</tr>
+			
+			<tr>
+				<td rowspan="4" class="severity">S2</td>
+				<td class="exposure">E1</td>
+				<td class="S2 E1 C1 QM">QM</td>
+				<td class="S2 E1 C2 QM">QM</td>
+				<td class="S2 E1 C3 QM">QM</td>
+			</tr>
+			<tr>
+				<td class="exposure">E2</td>
+				<td class="S2 E2 C1 QM">QM</td>
+				<td class="S2 E2 C2 QM">QM</td>
+				<td class="S2 E2 C3 A">A</td>
+			</tr>
+			<tr>
+				<td class="exposure">E3</td>
+				<td class="S2 E3 C1 QM">QM</td>
+				<td class="S2 E3 C2 A">A</td>
+				<td class="S2 E3 C3 B">B</td>
+			</tr>
+			<tr>
+				<td class="exposure">E4</td>
+				<td class="S2 E4 C1 A">A</td>
+				<td class="S2 E4 C2 B">B</td>
+				<td class="S2 E4 C3 C">C</td>
+			</tr>
+			<tr>
+				<td rowspan="4" class="severity">S3</td>
+				<td class="exposure">E1</td>
+				<td class="S3 E1 C1 QM">QM</td>
+				<td class="S3 E1 C2 QM">QM</td>
+				<td class="S3 E1 C3 A">A</td>
+			</tr>
+			<tr>
+				<td class="exposure">E2</td>
+				<td class="S3 E2 C1 QM">QM</td>
+				<td class="S3 E2 C2 A">A</td>
+				<td class="S3 E2 C3 B">B</td>
+			</tr>
+			<tr>
+				<td class="exposure">E3</td>
+				<td class="S3 E3 C1 A">A</td>
+				<td class="S3 E3 C2 B">B</td>
+				<td class="S3 E3 C3 C">C</td>
+			</tr>
+			<tr>
+				<td class="exposure">E4</td>
+				<td class="S3 E4 C1 B">B</td>
+				<td class="S3 E4 C2 C">C</td>
+				<td class="S3 E4 C3 D">D</td>
+			</tr>
+		</table>	
+		
+		<p>
+			C - Controllability <br/>
+			S - Severity <br/> 
+			E - Exposure <br/> 
+		</p>
+		<p>
+			You can check whether objects in a module have the correct ASIL values as per the table above. 
+			<div class="asilResult">Select one object </div>
+		</p>
+		<button id="checkModule" disabled="true">Check All</button>
+		
+		<button class="correctButton">Correct</button>
+		
+		<button id="correctAll" disabled="true">Correct All</button>
+
+		
+		<h4>About the ASIL guidance extension</h4>			
+		<p>
+		This extension offers process guidance for the ASIL value for the objects in the current
+		module. 
+		</p>
+
+		
+
+		
+		<div class="controllabilityHelper">
+			<h2>Controllability</h2>
+			<p>Ability to avoid a <b>specified harm or damage</b> through the timely reaction of the persons involved</p>
+		</div>
+		
+		<div class="severityHelper">
+			<h2>Severity</h2>
+			<p>Estimate to the <b>Extent of the harm</b> to one or more individuals that can occur in a potentially hazardous situation.</p>
+		</div>
+		
+		<div class="exposureHelper">
+			<h2>Exposure</h2>
+			<p>State of being in an operation situation that can be hazardous if coincedent with failure mode under analysis</p>
+		</div>
+		
+		
+				
+		<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="js/asil.js"></script>
+	]]>
+	</Content>
+</Module>

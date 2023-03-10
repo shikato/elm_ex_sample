@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ moduleexplorer.xml
+© Copyright IBM Corporation 2013
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Module Explorer">
+	<Require feature="com.ibm.rdm.rm.api"></Require>
+	<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+	<link rel="stylesheet" type="text/css" href="css/mod-exp.css"/>
+	<div class="optionsContainer">
+		<div class="showHideOptions"></div>
+		<div class="optionsSection">
+			<div>
+				<input id="onlyShowHeadings" type="checkbox"/>
+				<label for="onlyShowHeadings">Only Show Headings</label>
+			</div>
+			<div>
+				<input id="wrap" type="checkbox"/>
+				<label for="wrap">Turn Off Wrapping</label>
+			</div>
+			<div>
+				<input id="colourByStatus" type="checkbox"/>
+				<label for="colourByStatus">Colour By Status</label>
+			</div>
+			<div>
+				<select id="levelSelect">
+				</select>
+				<label for="levelSelect">Collapse At Level </label>
+			</div>
+			<input id="search" type="text" value="Search..."/>
+		</div>
+	</div>
+	<div id="explorer"></div>
+	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/mod-exp.js"></script>
+]]>
+</Content>
+</Module>

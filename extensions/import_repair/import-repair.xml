@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ import-repair.xml
+© Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Import Repair" height="700" scrolling="true">
+	<Require feature="com.ibm.rdm.rm.api"/>
+</ModulePrefs>
+<Content type="html">
+	<![CDATA[
+		<html>
+			<head>
+				<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+				<script src="js/import-repair.js"></script>
+				<link rel="stylesheet" type="text/css" href="css/import-repair.css">
+			</head>
+			<body>
+				<h3>Repairs</h3>				
+				<button id="repairDocument">Repair Document</button>
+				<br/>
+				<h4>Depth Indicator Attribute:</h4>
+				<input type="text" id="attrInput"></input>
+				<br/>
+				<h3>Results</h3>
+				<div id="result" class="info"></div>
+			</body>
+		</html>
+	]]>
+</Content>
+</Module>

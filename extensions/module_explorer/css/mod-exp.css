@@ -1,0 +1,252 @@
+/*
+ Licensed Materials - Property of IBM
+ mod-exp.css
+ © Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+*/
+
+body {
+	font-family: "Arial";
+	padding: 2px;
+	font-size: 11px;
+  /* prevent IE from temporarily showing a scrollbar on resize */
+  overflow-y: hidden;
+}
+
+#explorer {
+  min-height: 155px;
+}
+
+#explorer .heading {
+	font-weight: bold;
+	color: #333;
+}
+
+
+#explorer .heading .sectionNumber{
+  color: #999;
+}
+
+#explorer .row {
+    border-left: 1px solid transparent;
+}
+
+#explorer .row.parent {
+	position: relative;
+}
+
+.loadingImg {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+.optionsContainer {
+  min-height: 2em;
+  position: absolute;
+  top: 0px;
+  z-index: 1000;
+  width: 31px;
+  right: 5px;
+  text-align: right;
+  background-color: white;
+}
+
+.optionsContainer:hover {
+  width: 150px;
+}
+
+.showHideOptions {
+  cursor: pointer;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: relative;
+  top: 4px;
+  padding: 0px 2px 0px 2px;
+  background-image: url(settings.png);
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 25px;
+  opacity: 0;
+  display:  inline-block;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 0.25s;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+}
+
+body:hover .showHideOptions {
+  opacity: 1;
+}
+
+.optionsContainer .optionsSection > div {
+  display: none;
+}
+
+.optionsContainer:hover .optionsSection > div {
+   display: block;
+}
+
+.optionsContainer:hover #search {
+  display: inline-block;
+}
+
+.optionsContainer:hover .optionsSection {
+  display: block;
+  height: 120px;
+  border: 1px solid #ADADAD; 
+  box-shadow: 2px 3px 3px rgba(0,0,0,0.25);
+}
+
+#search {
+  width: 135px;
+  margin: 3px auto 2px auto;
+  display: none;
+  font-style: italic;
+  color: #ccc;
+  border: 1px solid #ADADAD;
+  margin-top: 10px;
+}
+
+#search:focus {
+  font-style: normal;
+  color: black;
+}
+
+.searchNoMatch {
+  display: none;
+}
+
+.optionsContainer:hover .showHideOptions {
+  border-left: 1px solid #ADADAD;
+  border-right: 1px solid #ADADAD;
+  border-top: 1px solid #ADADAD;
+}
+
+.optionsSection {
+  height: 0px;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid transparent;
+  padding: 0px 5px 0px 5px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-property: height;
+  -moz-transition-duration: 0.5s;
+  transition-property: height;
+  transition-duration: 0.5s
+}
+
+#explorer .parent .expander {
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   left: -3px;
+   height: 12px;
+   width: 12px;
+   background-image: url(open.png);
+   background-repeat: no-repeat;
+
+   /* Animated transition for expanders */
+   -webkit-transition-property: opacity;
+   -webkit-transition-duration: 0.5s;
+   -moz-transition-property: opacity;
+   -moz-transition-duration: 0.5s;
+   transition-property: opacity;
+   transition-duration: 0.5s;
+}
+
+#explorer:hover .parent .expander {
+    opacity: 1;
+}
+
+#explorer .parent .expander:hover {
+   background-image: url(open-hover.png);
+  
+}
+
+#explorer .parent.collapsed .expander {
+    background-image: url(collapsed.png);
+    left: -3px;
+}
+
+#explorer .parent.collapsed .expander:hover {
+   background-image: url(collapsed-hover.png);
+}
+
+
+#explorer {
+    padding-left: 4px;
+}
+
+#explorer.nowrap .item {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#explorer .item {
+	cursor: pointer;
+	display: block;
+  	border: 1px solid transparent;
+  	margin-left: 12px;
+  	padding: 0 2px 1.5pt 2px;
+  	border-radius: 3px;
+}
+
+#explorer .item:hover {
+	color: #3087B3;
+  background-color: aliceblue;
+  border: 1px solid;
+}
+
+#explorer.headingsOnly .non-heading {
+	display: none;
+}
+
+.non-heading {
+    color: #999;
+}
+
+.non-heading {
+	color: #444;
+}
+
+.depth2, .depth3, .depth4, .depth5, .depth6, .depthGreaterThan6  {
+	margin-left: 10px;
+}
+
+.parent.collapsed .row {
+    display: none;
+}
+
+
+.colourByStatus .Rejected {
+    color: red;
+}
+
+.colourByStatus .Approved {
+    color: green;
+}
+
+.colourByStatus .Prelimanry {
+    color: orange;
+}
+
+.colourByStatus .In-Process {
+    color: green;
+    font-weight: bold;
+}
+
+.colourByStatus .Postponed {
+    color: brown;
+}
+
+.colourByStatus .Obsolete {
+    font-style: italic;
+    color: #ddd;
+}

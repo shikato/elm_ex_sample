@@ -1,0 +1,53 @@
+/*
+ Licensed Materials - Property of IBM
+ attr-links-ext.css
+© Copyright IBM Corporation 2013
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+*/
+
+body {
+	font-family: "Arial";
+	padding: 2px;
+	font-size: 12px;
+}
+.info{
+	overflow-y:auto;
+} 
+
+table {
+	border-collapse: collapse;
+	font-size: 1em;
+	margin: auto;
+	margin-top: 10px;
+}
+ 
+tr {
+	border-bottom: 1px solid black;
+}
+
+td {
+	border-left: 1px solid black;
+	color: #333;
+	text-align: left;
+	padding: 2px 4px;
+}
+
+td.titleRow {
+	font-weight: bold;
+	background: #cee2f2;
+	text-align: center
+}
+
+td.nameCell {
+	font-weight: bold;
+}
+
+td:last-child {
+	border-right: 1px solid black;
+}
+
+tr:first-child td {
+	border-top: 1px solid black;
+}
+

@@ -1,0 +1,125 @@
+/*
+ Licensed Materials - Property of IBM
+ status.css
+ © Copyright IBM Corporation 2014
+
+ U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+
+body {
+	font-family: Arial;
+	font-size: 10pt;
+	padding: 5px;
+}
+
+.simpleBarChart {
+	border-left: 1px solid #CCCCCC;
+	display: inline-block;
+	position: relative;
+	margin-left: 28px;
+	padding-left: 5px;
+	white-space: nowrap;
+}
+
+.simpleBarChart .bar, .label {
+	width: 70px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 10px;
+}
+
+.bar {
+	background-color: #CDCDCD;
+}
+
+.label {
+	text-align: center;	
+	white-space: nowrap;	
+}
+
+.labels {
+	margin-left: 28px;
+	font-size: 0.8em;
+	padding-left: 5px;
+	white-space: nowrap;
+}
+
+.simpleBarChart .marker {
+	position: absolute;
+	color: #AAA;
+	font-size: 0.8em;
+	display: inline-block;
+	text-align: center;
+	left: -26px;
+	width: 24px
+}
+
+.simpleBarChart .marker:after {
+	position: absolute;
+	width: 4px;
+	content: "";
+	display: block;
+	border-top: 1px solid #ccc;
+	height: 1px;
+	left: 21px;
+	top: 50%
+}
+
+.pieTitle {
+	margin-top: 25px;
+}
+
+.simpleBarChart .rule {
+	position: absolute;
+	top: 0px;
+	border-right: 1px dashed #aaa;
+	height: 100%;
+	z-index: -1;
+}
+
+
+/* Some colours for the different statuses */
+.bar.Approved, g.Approved path {
+	background-color: #9AB535;
+	fill: #9AB535;
+}
+
+.bar.In-Process, g.In-Process path {
+	background-color: #75ADB3;
+	fill: #75ADB3;
+}
+
+.bar.Draft, g.Draft path {
+	background-color: #F0CC00;
+	fill: #F0CC00;
+}
+
+.bar.Under-Review, .bar.Prelimanry,
+g.Under-Review path, g.Prelimanry path {
+	background-color: #6ecfc7;
+	fill: #6ecfc7;
+}
+
+.bar.Postponed, .bar.Deprecated,
+g.Postponed path, g.Deprecated path {
+	background-color: #e6944a;
+	fill: #e6944a;
+}
+
+.bar.Rejected, g.Rejected path { 
+	background-color: #b2293d;
+	fill: #b2293d;
+}
+
+.bar.Postponed, g.Postponed path {
+	background-color: #c767ae;
+	fill: #c767ae;
+}
+
+.bar.Obsolete, g.Obsolete path {
+	background-color: #ccc;
+	fill: #ccc;
+}
+
+
+

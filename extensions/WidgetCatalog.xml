@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed Materials - Property of IBM
+ WidgetCatalog.xml
+© Copyright IBM Corporation 2013
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+
+This file packages the extensions into a catalog that can be used for integration with the Add Widget dialog.  
+-->
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:ju="http://jazz.net/ns/ui#" 
+	xmlns:dc="http://purl.org/dc/terms/">
+	<ju:catalog-entry>
+		<dc:description>This extension shows a hierarchical tree view of the module, which you can click to explore. You can search for artifacts, collapse or expand the hierarchy to a particular level, and toggle to show only headings or all of the artifacts in the module.</dc:description>
+		<dc:title>Module Explorer</dc:title>
+		<ju:gadget rdf:resource='./module_explorer/moduleexplorer.xml' />
+		<ju:icon rdf:resource="./module_explorer/moduleexplorer.gif"/>
+		<ju:preview rdf:resource="./module_explorer/moduleexpl_pre.png"/>
+		<ju:thumbnail rdf:resource="./module_explorer/moduleexpl_thumb.png"/>
+		<ju:category>Requirements</ju:category> 
+		<ju:category>Sample Extensions</ju:category>
+	</ju:catalog-entry>
+	<ju:catalog-entry>
+		<dc:description>This extension checks modules that include information related to the ISO 26262 ASIL standard. Use this extension on a module that contains artifacts that have these attributes: Controllability Class, Probability Class, Severity Class, and ASIL. The extension computes the correct value for the ASIL attribute based on the Controllability, Probability, and Severity values. You can run the extension on a module and produce a report that shows which module rows have incorrect ASIL values. You can then correct any incorrect values.</dc:description>
+		<dc:title>ASIL Guidance</dc:title>
+		<ju:gadget rdf:resource='./asil_gadget/asil.xml' />
+		<ju:icon rdf:resource="./asil_gadget/ASIL.gif"/>
+		<ju:preview rdf:resource="./asil_gadget/ASIL_pre.png"/>
+		<ju:thumbnail rdf:resource="./asil_gadget/ASIL_thumb.png"/>
+		<ju:category>Sample Extensions</ju:category>
+	</ju:catalog-entry>
+	<ju:catalog-entry>
+		<dc:description>This extension shows the attributes and links of the artifact that is currently selected.</dc:description>
+		<dc:title>Attributes and Links</dc:title>
+		<ju:gadget rdf:resource='./selected_attrs/attr-links-ext.xml' />
+		<ju:icon rdf:resource="./selected_attrs/attribute-links-dash.gif"/>
+		<ju:preview rdf:resource="./selected_attrs/attribute-link_pre.png"/>
+		<ju:thumbnail rdf:resource="./selected_attrs/attribute-link_thumb.png"/>
+		<ju:category>Sample Extensions</ju:category>
+	</ju:catalog-entry>
+	<ju:catalog-entry>
+		<dc:description>This extension operates on Text artifacts in a Module and and either join a selected group of them into a single artifact or take a single artifact with multiple paragraphs and split them out into individual artifacts in the Module.</dc:description>
+		<dc:title>Split and Join</dc:title>
+		<ju:gadget rdf:resource='./split_join/split-join.xml' />
+		<ju:icon rdf:resource="./split_join/split-join.gif"/>
+		<ju:preview rdf:resource="./split_join/split-join_pre.png"/>
+		<ju:thumbnail rdf:resource="./split_join/split-join_thumb.png"/>
+		<ju:category>Sample Extensions</ju:category>
+	</ju:catalog-entry>
+	<ju:catalog-entry>
+		<dc:description>This extension allows you to take module with a flat hierarchy but an attribute on the artifacts that indicates depth and move all the artifacts in it to the corresponding depth.</dc:description>
+		<dc:title>Import Repair</dc:title>
+		<ju:gadget rdf:resource='./import_repair/import-repair.xml' />
+		<ju:icon rdf:resource="./import_repair/import-repair.gif"/>
+		<ju:preview rdf:resource="./import_repair/import-repair_pre.png"/>
+		<ju:thumbnail rdf:resource="./import_repair/import-repair_thumb.png"/>
+		<ju:category>Sample Extensions</ju:category>
+	</ju:catalog-entry>
+</rdf:RDF> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

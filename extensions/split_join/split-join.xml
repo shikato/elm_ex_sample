@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ import-repair.xml
+© Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Split and Join" height="700" scrolling="true">
+	<Require feature="com.ibm.rdm.rm.api"/>
+</ModulePrefs>
+<Content type="html">
+	<![CDATA[
+		<html>
+			<head>
+				<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+				<script src="js/split-join.js"></script>
+				<link rel="stylesheet" type="text/css" href="css/split-join.css">
+			</head>
+			<body>
+				<h3>Operations</h3>				
+				<button id="joinArtifacts">Join Artifacts</button>
+				<br/>				
+				<button id="splitArtifact">Split Artifact</button>
+				<br/>
+				<h3>Information</h3>
+				<div id="result" class="info"></div>
+			</body>
+		</html>
+	]]>
+</Content>
+</Module>

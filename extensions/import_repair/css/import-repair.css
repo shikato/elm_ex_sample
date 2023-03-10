@@ -1,0 +1,20 @@
+/*
+ Licensed Materials - Property of IBM
+ import-repair.css
+© Copyright IBM Corporation 2013
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+*/
+
+body {
+	font-family: "Arial";
+	padding: 5px;
+	font-size: 12px;
+}
+
+.info{
+	overflow-y:auto;
+	border: 5px solid black;
+	padding: 2px;
+	display: none;
+} 
