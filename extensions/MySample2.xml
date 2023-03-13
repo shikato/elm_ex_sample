@@ -39,9 +39,10 @@
 <Locale lang="de" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_de.xml"/>
 <Locale lang="it" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_it.xml"/>
 <Locale lang="sr" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_sr.xml"/>
-<Require feature="dynamic-height"/>
-<Require feature="setprefs"/>
-<Require feature="views"/>
+<ModulePrefs title="ASIL Guidance" height="680">
+  <Require feature="com.ibm.rdm.rm.api"/>
+  <Require feature="dynamic-height"/>
+</ModulePrefs>
 </ModulePrefs>
 <UserPref name="isChecked" display_name="__MSG_show_in_gadget__" datatype="bool" default_value="true"/>
 <Content type="html" view="home, preview">

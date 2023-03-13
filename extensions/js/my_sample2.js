@@ -1,6 +1,3 @@
-var moduleRef;
-
-
 //function checkIfModule(opResult) {
 //	// Summary:
 //	//    This function is called in response to a getAttributes call

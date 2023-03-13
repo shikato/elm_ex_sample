@@ -40,6 +40,7 @@ $(function() {
 });
 // Subscribe to the Artifact Selection event 
 RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
+  console.log("selected artifact by asil");
 	if (selected.length === 1) {
 		// good, the user selected one thing, fetch it's attributes
 		// and figure out whether the ASIL value is correct.
@@ -53,6 +54,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 });
 
 RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
+    console.log("opened artifact by asil");
     // subscribe to the artifact opened event, and check whether
     // the format of the opened artifact is MODULE.
     RM.Data.getAttributes(ref, RM.Data.Attributes.FORMAT, checkIfModule);	
