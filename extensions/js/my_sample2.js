@@ -27,6 +27,7 @@
 
 RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
   console.log("selected artifact");
+  console.log("selected", selected);
 //	if (selected.length === 1) {
 //	} else {
 //		// clear the display area...
@@ -38,6 +39,19 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 
 RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
   console.log("opened artifact");
+  console.log("ref", ref);
+
+	RM.Data.getAttributes(ref, 
+		["ID", 
+		 "Contents"], function(result) {
+		 	if (result.code === RM.OperationResult.OPERATION_OK) {
+        console.log("result", result);
+				// get the RM.ArtifactAttributes object from the result
+				var attrs = result.data[0];
+				// invoke our processASIL function with that object :
+        console.log("attrs", attrs);
+			}
+	});
     // subscribe to the artifact opened event, and check whether
     // the format of the opened artifact is MODULE.
 //    RM.Data.getAttributes(ref, RM.Data.Attributes.FORMAT, checkIfModule);	
