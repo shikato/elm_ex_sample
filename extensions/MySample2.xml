@@ -7,7 +7,7 @@
 U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
 -->
 <Module specificationVersion="2.0">
-	<ModulePrefs title="ASIL Guidance" height="680">
+	<ModulePrefs title="ASIL Guidance" height="180">
 		<Require feature="com.ibm.rdm.rm.api"/>
 		<Require feature="dynamic-height"/>
 	</ModulePrefs>
