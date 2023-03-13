@@ -40,7 +40,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
         console.log("attrs_", attrs);
 
         var id = attrs.values["ID"];
-        console.log("id_", id);
+        console.log("_id_", id);
       }
 	});
 
