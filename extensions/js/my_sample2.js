@@ -41,6 +41,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 
         var id = attrs.values["ID"];
         console.log("id_", id);
+      }
 	});
 
 //	if (selected.length === 1) {
