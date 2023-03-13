@@ -45,9 +45,10 @@
 </ModulePrefs>
 <UserPref name="isChecked" display_name="__MSG_show_in_gadget__" datatype="bool" default_value="true"/>
 <Content type="html" view="home, preview">
-<h1>MySample</h1>
-</Content>
-<Content type="html" view="canvas">
-<h2>MyDesc</h2>
+<![CDATA[
+<h1>MySample3</h1>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/my_sample2.js"></script>
+]]>
 </Content>
 </Module>
