@@ -24,10 +24,6 @@
 
 
 
-$(function() {
-	gadgets.window.adjustHeight();
-});
-
 
 RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
   console.log("selected artifact");

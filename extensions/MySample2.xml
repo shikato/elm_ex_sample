@@ -1,55 +1,21 @@
-<Module>
-<ModulePrefs title="__MSG_wikipedia__" description="__MSG_description__" directory_title="__MSG_directory_title__" title_url="__MSG_wikipedia_link__" author="Google" author_affiliation="Google Inc." author_location="Mountain View, CA" author_email="googlemodules+wikipedia_v2+201204231@google.com" screenshot="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wpscreenshot.cache.png" thumbnail="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wpicon.cache.png" scrolling="false" height="46">
-<Locale messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/en_us.xml"/>
-<Locale lang="ar" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ar.xml" language_direction="rtl"/>
-<Locale lang="bg" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_bg.xml"/>
-<Locale lang="ca" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ca.xml"/>
-<Locale lang="cs" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_cs.xml"/>
-<Locale lang="el" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_el.xml"/>
-<Locale lang="en" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_en.xml"/>
-<Locale lang="et" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_et.xml"/>
-<Locale lang="hi" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_hi.xml"/>
-<Locale lang="hr" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_hr.xml"/>
-<Locale lang="hu" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_hu.xml"/>
-<Locale lang="hy" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_hy.xml"/>
-<Locale lang="id" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_id.xml"/>
-<Locale lang="is" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_is.xml"/>
-<Locale lang="lt" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_lt.xml"/>
-<Locale lang="lv" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_lv.xml"/>
-<Locale lang="ms" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ms.xml"/>
-<Locale lang="pl" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_pl.xml"/>
-<Locale lang="ro" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ro.xml"/>
-<Locale lang="sk" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_sk.xml"/>
-<Locale lang="sl" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_sl.xml"/>
-<Locale lang="th" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_th.xml"/>
-<Locale lang="tl" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_tl.xml"/>
-<Locale lang="tr" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_tr.xml"/>
-<Locale lang="uk" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_uk.xml"/>
-<Locale lang="vi" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_vi.xml"/>
-<Locale lang="zh-TW" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_zh-tw.xml"/>
-<Locale lang="ja" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ja.xml"/>
-<Locale lang="pt-BR" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_pt-br.xml"/>
-<Locale lang="pt-PT" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_pt-br.xml"/>
-<Locale lang="ko" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ko.xml"/>
-<Locale lang="es" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_es.xml"/>
-<Locale lang="fr" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_fr.xml"/>
-<Locale lang="ru" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_ru.xml"/>
-<Locale lang="zh-CN" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_zh-cn.xml"/>
-<Locale lang="nl" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_nl.xml"/>
-<Locale lang="de" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_de.xml"/>
-<Locale lang="it" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_it.xml"/>
-<Locale lang="sr" messages="http://www.gstatic.com/ig/modules/wikipedia/wikipedia_content/wk_msg_sr.xml"/>
-<ModulePrefs title="ASIL Guidance" height="680">
-  <Require feature="com.ibm.rdm.rm.api"/>
-  <Require feature="dynamic-height"/>
-</ModulePrefs>
-</ModulePrefs>
-<UserPref name="isChecked" display_name="__MSG_show_in_gadget__" datatype="bool" default_value="true"/>
-<Content type="html" view="home, preview">
-<![CDATA[
-<h1>MySample3</h1>
-<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="js/my_sample2.js"></script>
-]]>
-</Content>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ asil.xml
+© Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+	<ModulePrefs title="ASIL Guidance" height="680">
+		<Require feature="com.ibm.rdm.rm.api"/>
+		<Require feature="dynamic-height"/>
+	</ModulePrefs>
+  <Content type="html">
+  <![CDATA[
+  <h1>MySample3_</h1>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/my_sample2.js"></script>
+  ]]>
+	</Content>
 </Module>
