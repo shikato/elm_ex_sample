@@ -39,7 +39,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 				// invoke our processASIL function with that object :
         console.log("attrs", attrs);
 
-        var id = attrs.values["ID"],
+        var id = attrs.values["ID"];
         console.log("id", id);
 	});
 
