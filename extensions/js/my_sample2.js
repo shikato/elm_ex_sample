@@ -30,7 +30,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
   console.log("selected", selected);
 
 	RM.Data.getAttributes(selected[0], 
-		["A", "C", "D"
+		["A", "C", "D",
 		 "B"], function(result) {
 		 	if (result.code === RM.OperationResult.OPERATION_OK) {
         console.log("result_", result);
