@@ -13,7 +13,7 @@ U.S. Government Users Restricted Rights:  Use, duplication or disclosure restric
 	</ModulePrefs>
   <Content type="html">
   <![CDATA[
-    <h1>拡張機能サンプル</h1>
+    <h1>Sample</h1>
     <button id="calc">D=A+B+C</button>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="js/my_sample2.js"></script>
