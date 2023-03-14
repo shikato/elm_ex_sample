@@ -26,12 +26,12 @@
 
 
 RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
-  console.log("selected artifact");
+  console.log("selected artifact_");
   console.log("selected", selected);
 
 	RM.Data.getAttributes(selected[0], 
-		["ID", 
-		 "Contents"], function(result) {
+		["A", "C", "D"
+		 "B"], function(result) {
 		 	if (result.code === RM.OperationResult.OPERATION_OK) {
         console.log("result_", result);
 				// get the RM.ArtifactAttributes object from the result
