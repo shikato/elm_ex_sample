@@ -25,7 +25,7 @@
 
 
 
-var selected;
+var _selected;
 RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
   console.log("selected artifact_");
   console.log("selected", selected);
@@ -45,7 +45,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
           Number(attrs.values["A"] + attrs.values["B"] + attrs.values["C"]);
         console.log("D=", attrs.values["D"]);
 
-        selected = attrs;
+        _selected = attrs;
 
 //        RM.Data.setAttributes(selected, function(r) {
 //          console.log("save result when select", r);
@@ -66,9 +66,9 @@ $(function() {
   console.log("set click event");
   $("#calcBtn").on("click", () => {
     console.log("on click!");
-    console.log("selected when click", selected);
+    console.log("selected when click", _selected);
 
-    RM.Data.setAttributes(selected, function(r) {
+    RM.Data.setAttributes(_selected, function(r) {
       console.log("save result when click", r);
     });
   });
