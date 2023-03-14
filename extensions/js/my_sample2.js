@@ -66,6 +66,7 @@ $(function() {
   console.log("set click event");
   $("#calcBtn").on("click", () => {
     console.log("on click!");
+    console.log("selected when click", selected);
 
     RM.Data.setAttributes(selected, function(r) {
       console.log("save result when click", r);
