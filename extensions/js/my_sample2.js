@@ -25,6 +25,7 @@
 
 
 
+var selected;
 RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
   console.log("selected artifact_");
   console.log("selected", selected);
@@ -40,11 +41,10 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
         console.log("attrs__", attrs);
 
         var id = attrs.values["ID"];
-        attrs.values["D"] = 2000;
+        attrs.values["D"] = attrs.values["A"] + attrs.values["B"] + attrs.values["C"];
+        console.log("D=", attrs.values["D"]);
 
-        RM.Data.setAttributes(attrs, function(r) {
-          console.log("save result", r);
-        });
+        selected = attrs;
       }
 	});
 
@@ -60,6 +60,14 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
   console.log("opened artifact");
   console.log("ref", ref);
+
+  $("#calc").on("click", () => {
+    console.log("onclick!");
+
+    RM.Data.setAttributes(selected, function(r) {
+      console.log("save result", r);
+    });
+  });
 
 //	RM.Data.getAttributes(ref, 
 //		["ID", 

@@ -7,14 +7,14 @@
 U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
 -->
 <Module specificationVersion="2.0">
-	<ModulePrefs title="ASIL Guidance" height="180">
+	<ModulePrefs title="D=A+B+C" height="180">
 		<Require feature="com.ibm.rdm.rm.api"/>
 		<Require feature="dynamic-height"/>
 	</ModulePrefs>
   <Content type="html">
   <![CDATA[
-    <h1>MySample__</h1>
-		<button id="calc">calc</button>
+    <h1>拡張機能サンプル</h1>
+    <button id="calc">D=A+B+C</button>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="js/my_sample2.js"></script>
   ]]>
