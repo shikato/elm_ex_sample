@@ -41,10 +41,15 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
         console.log("attrs__", attrs);
 
         var id = attrs.values["ID"];
-        attrs.values["D"] = attrs.values["A"] + attrs.values["B"] + attrs.values["C"];
+        attrs.values["D"] = 
+          Number(attrs.values["A"] + attrs.values["B"] + attrs.values["C"]);
         console.log("D=", attrs.values["D"]);
 
         selected = attrs;
+
+        RM.Data.setAttributes(selected, function(r) {
+          console.log("save result when select", r);
+        });
       }
 	});
 
@@ -65,7 +70,7 @@ RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
     console.log("onclick!");
 
     RM.Data.setAttributes(selected, function(r) {
-      console.log("save result", r);
+      console.log("save result when click", r);
     });
   });
 
