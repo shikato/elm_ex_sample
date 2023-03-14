@@ -33,14 +33,18 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 		["A", "C", "D",
 		 "B"], function(result) {
 		 	if (result.code === RM.OperationResult.OPERATION_OK) {
-        console.log("result_", result);
+        console.log("result__", result);
 				// get the RM.ArtifactAttributes object from the result
 				var attrs = result.data[0];
 				// invoke our processASIL function with that object :
-        console.log("attrs_", attrs);
+        console.log("attrs__", attrs);
 
         var id = attrs.values["ID"];
-        console.log("_id_", id);
+        attrs.values["D"] = 2000;
+
+        RM.Data.setAttributes(attrs, function(r) {
+          console.log("save result", r);
+        });
       }
 	});
 
