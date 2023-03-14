@@ -64,8 +64,8 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 
 $(function() {
   console.log("set click event");
-  $("#calc").on("click", () => {
-    console.log("onclick!");
+  $("#calcBtn").on("click", () => {
+    console.log("on click!");
 
     RM.Data.setAttributes(selected, function(r) {
       console.log("save result when click", r);
