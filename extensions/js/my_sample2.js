@@ -47,9 +47,9 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 
         selected = attrs;
 
-        RM.Data.setAttributes(selected, function(r) {
-          console.log("save result when select", r);
-        });
+//        RM.Data.setAttributes(selected, function(r) {
+//          console.log("save result when select", r);
+//        });
       }
 	});
 
