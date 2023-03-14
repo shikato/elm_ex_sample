@@ -62,10 +62,8 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
 //	}		
 });
 
-RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
-  console.log("opened artifact");
-  console.log("ref", ref);
-
+$(function() {
+  console.log("set click event");
   $("#calc").on("click", () => {
     console.log("onclick!");
 
@@ -73,6 +71,12 @@ RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
       console.log("save result when click", r);
     });
   });
+});
+
+RM.Event.subscribe(RM.Event.ARTIFACT_OPENED, function(ref) {
+  console.log("opened artifact");
+  console.log("ref", ref);
+
 
 //	RM.Data.getAttributes(ref, 
 //		["ID", 
