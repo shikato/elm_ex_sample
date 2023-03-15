@@ -14,7 +14,6 @@ RM.Event.subscribe(RM.Event.ARTIFACT_SELECTED, function(selected) {
         // invoke our processASIL function with that object :
         console.log("attrs", attrs);
 
-        var id = attrs.values["ID"];
         attrs.values["D"] = 
           Number(attrs.values["A"] + attrs.values["B"] + attrs.values["C"]);
         console.log("D=", attrs.values["D"]);
